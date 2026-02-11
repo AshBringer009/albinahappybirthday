@@ -6,6 +6,8 @@ const defaultState = {
   placedPieces: {},
   puzzleSolved: false,
   audioEnabled: true,
+  games: {},
+  choice5: null,
 };
 
 function normalizeState(state) {
@@ -19,6 +21,8 @@ function normalizeState(state) {
     placedPieces: state.placedPieces && typeof state.placedPieces === "object" ? state.placedPieces : {},
     puzzleSolved: Boolean(state.puzzleSolved),
     audioEnabled: state.audioEnabled !== undefined ? Boolean(state.audioEnabled) : defaultState.audioEnabled,
+    games: state.games && typeof state.games === "object" ? state.games : {},
+    choice5: state.choice5 ?? null,
   };
 }
 

@@ -197,7 +197,7 @@ export function renderPuzzle(state, root) {
             ? `<img src="${FINAL_LETTER_PATH}" alt="Письмо" data-final-media="img" />`
             : `<iframe src="${FINAL_LETTER_PATH}" title="Письмо" loading="lazy" data-final-media="iframe"></iframe>`}
           <div class="final-placeholder" data-final-placeholder="true">
-            Файл письма пока не добавлен. Замените `FINAL_LETTER_PATH`.
+            Файл письма пока не добавлен. Замените FINAL_LETTER_PATH.
           </div>
         </div>
         <button class="btn" data-action="playlist">Прослушать всё</button>
